@@ -99,7 +99,7 @@ jobs:
           APP_URL: http://localhost:3334
 
       - name: Publish test results
-        uses: mikepenz/action-junit-report@v4
+        uses: mikepenz/action-junit-report@v6
         if: always()
         with:
           report_paths: 'sbf/test-results/junit-*.xml'
